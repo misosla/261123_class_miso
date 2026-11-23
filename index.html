@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김민준 ♥ 이서연 결혼합니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="invitation">
+
+    <!-- 메인 커버 -->
+    <section class="cover">
+      <p class="cover-date">2027. 05. 15 SAT</p>
+      <div class="cover-photo">
+        <img src="images/cover.jpg" alt="메인 사진">
+        <span>Our Wedding Day</span>
+      </div>
+      <h1 class="cover-names">
+        김민준 <span class="heart">♥</span> 이서연
+      </h1>
+      <p class="cover-info">2027년 5월 15일 토요일 오후 1시<br>더채플 서울 3층 그랜드홀</p>
+    </section>
+
+    <!-- 인사말 -->
+    <section class="section greeting fade-in">
+      <p class="section-label">INVITATION</p>
+      <h2 class="section-title">소중한 분들을 초대합니다</h2>
+      <p class="greeting-text">
+        서로가 마주보며 다져온 사랑을<br>
+        이제 함께 한 곳을 바라보며<br>
+        걸어갈 수 있는 큰 사랑으로 키우고자 합니다.<br><br>
+        저희 두 사람이 사랑의 이름으로<br>
+        지켜나갈 수 있도록 앞날을<br>
+        축복해 주시면 감사하겠습니다.
+      </p>
+      <div class="parents">
+        <p><strong>김OO · 박OO</strong> 의 아들 <strong>민준</strong></p>
+        <p><strong>이OO · 최OO</strong> 의 딸 <strong>서연</strong></p>
+      </div>
+    </section>
+
+    <!-- 예식 일시 / 달력 -->
+    <section class="section calendar-section fade-in">
+      <p class="section-label">WEDDING DAY</p>
+      <h2 class="section-title">2027년 5월 15일 토요일 오후 1시</h2>
+      <div class="calendar" id="calendar"></div>
+      <div class="countdown" id="countdown">
+        <div><span id="cd-days">0</span><small>DAYS</small></div>
+        <div><span id="cd-hours">0</span><small>HOURS</small></div>
+        <div><span id="cd-mins">0</span><small>MIN</small></div>
+        <div><span id="cd-secs">0</span><small>SEC</small></div>
+      </div>
+      <p class="dday-text" id="dday-text"></p>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="section gallery-section fade-in">
+      <p class="section-label">GALLERY</p>
+      <h2 class="section-title">우리의 순간</h2>
+      <div class="gallery" id="gallery">
+        <!-- images 폴더에 gallery1.jpg ~ gallery9.jpg 를 넣으면 자동으로 표시됩니다 -->
+        <div class="gallery-item"><img src="images/gallery1.jpg" alt="갤러리 사진 1"></div>
+        <div class="gallery-item"><img src="images/gallery2.jpg" alt="갤러리 사진 2"></div>
+        <div class="gallery-item"><img src="images/gallery3.jpg" alt="갤러리 사진 3"></div>
+        <div class="gallery-item"><img src="images/gallery4.jpg" alt="갤러리 사진 4"></div>
+        <div class="gallery-item"><img src="images/gallery5.jpg" alt="갤러리 사진 5"></div>
+        <div class="gallery-item"><img src="images/gallery6.jpg" alt="갤러리 사진 6"></div>
+        <div class="gallery-item"><img src="images/gallery7.jpg" alt="갤러리 사진 7"></div>
+        <div class="gallery-item"><img src="images/gallery8.jpg" alt="갤러리 사진 8"></div>
+        <div class="gallery-item"><img src="images/gallery9.jpg" alt="갤러리 사진 9"></div>
+      </div>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section class="section location fade-in">
+      <p class="section-label">LOCATION</p>
+      <h2 class="section-title">오시는 길</h2>
+      <p class="venue-name">더채플 서울 3층 그랜드홀</p>
+      <p class="venue-address">
+        서울특별시 강남구 테헤란로 123
+        <button class="btn-small" data-copy="서울특별시 강남구 테헤란로 123">주소 복사</button>
+      </p>
+      <div class="map" id="map"></div>
+      <div class="map-buttons">
+        <a class="map-btn" id="btn-naver" target="_blank" rel="noopener">네이버 지도</a>
+        <a class="map-btn" id="btn-kakao" target="_blank" rel="noopener">카카오맵</a>
+        <a class="map-btn" id="btn-google" target="_blank" rel="noopener">구글 지도</a>
+      </div>
+      <ul class="transport">
+        <li><strong>지하철</strong> 2호선 강남역 3번 출구 도보 5분</li>
+        <li><strong>버스</strong> 강남역 정류장 하차 (146, 341, 360)</li>
+        <li><strong>주차</strong> 건물 지하 주차장 2시간 무료</li>
+      </ul>
+    </section>
+
+    <!-- 마음 전하실 곳 -->
+    <section class="section account fade-in">
+      <p class="section-label">ACCOUNT</p>
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <div class="accordion">
+        <button class="accordion-header">신랑측 계좌번호 <span>＋</span></button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <p>신랑 김민준<br><small>국민은행 123-456-789012</small></p>
+            <button class="btn-small" data-copy="국민은행 123-456-789012">복사</button>
+          </div>
+          <div class="account-row">
+            <p>아버지 김OO<br><small>신한은행 110-123-456789</small></p>
+            <button class="btn-small" data-copy="신한은행 110-123-456789">복사</button>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion-header">신부측 계좌번호 <span>＋</span></button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <p>신부 이서연<br><small>우리은행 1002-123-456789</small></p>
+            <button class="btn-small" data-copy="우리은행 1002-123-456789">복사</button>
+          </div>
+          <div class="account-row">
+            <p>아버지 이OO<br><small>하나은행 123-456789-01234</small></p>
+            <button class="btn-small" data-copy="하나은행 123-456789-01234">복사</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 방명록 -->
+    <section class="section guestbook fade-in">
+      <p class="section-label">GUESTBOOK</p>
+      <h2 class="section-title">축하 메시지를 남겨주세요</h2>
+      <form class="guestbook-form" id="guestbook-form">
+        <input type="text" id="gb-name" placeholder="이름" maxlength="10" required>
+        <textarea id="gb-message" placeholder="두 사람에게 축하의 마음을 전해주세요" maxlength="200" rows="3" required></textarea>
+        <button type="submit" class="btn-submit">남기기</button>
+      </form>
+      <ul class="guestbook-list" id="guestbook-list"></ul>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <button class="btn-share" id="btn-share">청첩장 링크 공유하기</button>
+      <p>Thank you for celebrating with us</p>
+    </footer>
+  </main>
+
+  <!-- 갤러리 모달 -->
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="닫기">×</button>
+    <button class="modal-prev" id="modal-prev" aria-label="이전">‹</button>
+    <div class="modal-image" id="modal-image"><img id="modal-img" alt="확대 사진"></div>
+    <button class="modal-next" id="modal-next" aria-label="다음">›</button>
+  </div>
+
+  <!-- 토스트 메시지 -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
